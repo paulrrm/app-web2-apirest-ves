@@ -1,0 +1,19 @@
+{
+    "personal":[
+        {
+            "id":1,
+            "nombre": "Juan Paz",
+            "edad": 22
+        },
+        {
+            "id":2,
+            "nombre": "María Cruz",
+            "edad": 18
+        },
+        {
+            "id":3,
+            "nombre": "Ana Guerra",
+            "edad": 19
+        }
+    ]
+}
