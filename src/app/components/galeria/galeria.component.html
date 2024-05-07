@@ -1,0 +1,24 @@
+<div class="row container">
+    @for (item of empleados; track item) {
+    <div class="col-md-4">
+      <div class="thumbnail row">
+        
+        <a href="{{item.images.main}}" class="col-md-6">
+          <img src="{{item.images.main}}" alt="Lights" height="150">
+          
+        </a>
+      
+        <div class="caption  col-md-6">
+            <p>
+                Nombre: {{item.name.first}} {{item.name.middle}} {{item.name.last}}
+                <br>
+                Especie: {{item.species}}
+            </p>
+          </div>
+      </div>
+      <button class="btn btn-primary" [routerLink]="['/nosotros', item.id]">
+        Detalles
+    </button>
+    </div>
+    }
+  </div>

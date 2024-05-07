@@ -1,0 +1,18 @@
+<div class="contenedos">
+    <div class="card" style="width: 18rem;">
+        <img src="{{empleado.images.main}}" alt="Chicago Skyscrapers" height="300" width="150" />
+        <div class="card-body">
+            <h5 class="card-title">{{empleado.name.first}} {{empleado.name.middle}} {{empleado.name.last}}</h5>
+            <p class="card-text">{{empleado.occupation}}</p>
+        </div>
+        <ul class="list-group list-group-light list-group-small">
+            <li class="list-group-item px-4">{{empleado.age}} years old</li>
+            <li class="list-group-item px-4">{{empleado.sayings[0]}}</li>
+            <li class="list-group-item px-4">{{empleado.sayings[1]}}</li>
+        </ul>
+        <div class="card-body">
+            <a href="{{empleado.images.main}}" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+</div>
