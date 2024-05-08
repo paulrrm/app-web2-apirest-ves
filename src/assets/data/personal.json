@@ -15,9 +15,9 @@
     },
     {
       "id": "2",
-      "nombre": "Nicolas Maquiavelo",
+      "nombre": "Frederic",
       "edad": 34,
-      "genero": "femenino"
+      "genero": "masculino"
     }
   ]
 }

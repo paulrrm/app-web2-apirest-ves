@@ -16,7 +16,10 @@ export class PersonalService {
     return this.http.get( this.API_PERSONAL)
   }
 
-  
+  getPersonaID(id:any): Observable<any>{
+    return this.http.get(`${this.API_PERSONAL}/${id}`)
+  }
+
 
   //////// GUARDAR - POST /////////
   postPersonal(persona: JSON): Observable <any>{

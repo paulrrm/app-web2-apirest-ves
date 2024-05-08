@@ -25,6 +25,14 @@ export class DetallesPersonaComponent {
   ruta= inject(ActivatedRoute)
 
   ngOnInit(){
+    this.ruta.params.subscribe( r =>{
+
+      this.servicio.getPersonaID( r['idPersonal'] ).subscribe( p=>{
+        this.id = p.id
+        this.nombre= p.nombre
+        this.edad = p.edad
+      })
+    })
     
   }
 
