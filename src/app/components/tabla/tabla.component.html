@@ -1,1 +1,25 @@
-<p>tabla works!</p>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Género</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+    @for(item of personas; track item){
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.edad}}</td>
+        <td>{{item.genero}}</td>
+        <td>
+          <button class="btn btn-success" [routerLink]="['/personal', item.id]">Editar</button>
+          <button class="btn btn-danger" (click)="eliminar(item.id)">Eliminar</button>
+        </td>
+      </tr>
+    }
+    </tbody>
+  </table>

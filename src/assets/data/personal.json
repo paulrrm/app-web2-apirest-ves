@@ -1,19 +1,23 @@
 {
-    "personal":[
-        {
-            "id":1,
-            "nombre": "Juan Paz",
-            "edad": 22
-        },
-        {
-            "id":2,
-            "nombre": "María Cruz",
-            "edad": 18
-        },
-        {
-            "id":3,
-            "nombre": "Ana Guerra",
-            "edad": 19
-        }
-    ]
+  "personal": [
+    {
+      "id": "5",
+      "nombre": "Nicolas",
+      "edad": 14,
+      "genero": "masculino"
+    },
+    {
+      "id": "1",
+      "nombre": "Ana Cruz",
+      "edad": 13,
+      "genero": "femenino",
+      "cpp": true
+    },
+    {
+      "id": "2",
+      "nombre": "Nicolas Maquiavelo",
+      "edad": 34,
+      "genero": "femenino"
+    }
+  ]
 }
